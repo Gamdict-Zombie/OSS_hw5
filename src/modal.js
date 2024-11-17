@@ -60,6 +60,7 @@ const ServiceModal = ({ onSave }) => {
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
+    {error && <div className="alert alert-danger">{error}</div>}
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
