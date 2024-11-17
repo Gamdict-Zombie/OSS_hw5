@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const EditModal = ({ serviceData, onUpdate }) => {
   const updateServiceApi = `https://67296beb6d5fa4901b6d15ca.mockapi.io/Services/${serviceData?.id || ""}`;
   const [formErrors, setFormErrors] = useState({});
+  const [error, setError] = useState(null);
   const [service, setService] = useState({
     title: "",
     stars: "",
