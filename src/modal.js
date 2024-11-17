@@ -5,7 +5,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const ServiceModal = ({ onSave }) => {
   const createServiceApi = "https://67296beb6d5fa4901b6d15ca.mockapi.io/Services";
-  const [error, setError] = useState(null);
   const [formErrors, setFormErrors] = useState({});
   const [service, setService] = useState({
     title: "",

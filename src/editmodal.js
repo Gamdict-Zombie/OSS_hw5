@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { Modal } from "bootstrap";
 
 const EditModal = ({ serviceData, onUpdate }) => {
   const updateServiceApi = `https://67296beb6d5fa4901b6d15ca.mockapi.io/Services/${serviceData?.id || ""}`;
-  const [error, setError] = useState(null);
   const [formErrors, setFormErrors] = useState({});
   const [service, setService] = useState({
     title: "",
